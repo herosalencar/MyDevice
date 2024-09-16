@@ -1,0 +1,1 @@
+A simple application that obtains resource data from an Android smartphone.
