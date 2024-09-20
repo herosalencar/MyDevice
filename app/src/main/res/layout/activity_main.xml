@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutCardHead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ImageLogoCardHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/logo_painel_head_app"
+                app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayoutCardHead"
+                app:layout_constraintStart_toStartOf="@+id/ConstraintLayoutCardHead"
+                app:layout_constraintTop_toTopOf="@+id/ConstraintLayoutCardHead"
+                app:srcCompat="@drawable/ic_launcher_foreground"
+                app:tint="@android:color/holo_green_dark" />
+
+            <TextView
+                android:id="@+id/TextMyDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/my_device"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/ImageLogoCardHead"
+                app:layout_constraintTop_toTopOf="@id/ImageLogoCardHead" />
+
+            <TextView
+                android:id="@+id/TextManufacturer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/manufacturer"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/ImageLogoCardHead"
+                app:layout_constraintTop_toBottomOf="@id/TextMyDevice" />
+
+            <TextView
+                android:id="@+id/TextModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/model"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/TextManufacturer"
+                app:layout_constraintTop_toBottomOf="@id/TextMyDevice" />
+
+            <TextView
+                android:id="@+id/TextVersionAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/version_android"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/ImageLogoCardHead"
+                app:layout_constraintTop_toBottomOf="@id/TextManufacturer" />
+
+            <TextView
+                android:id="@+id/TextAPINivel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/api_nivel"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/TextVersionAndroid"
+                app:layout_constraintTop_toBottomOf="@id/TextModel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

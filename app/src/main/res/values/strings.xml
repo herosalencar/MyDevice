@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MyDevice</string>
+    <string name="logo_painel_head_app">Logo do painel head do app</string>
+    <string name="my_device">Meu Dispositivo</string>
+    <string name="manufacturer">Fabricante</string>
+    <string name="model">Modelo</string>
+    <string name="version_android">Android X</string>
+    <string name="api_nivel">API Nível</string>
 </resources>
