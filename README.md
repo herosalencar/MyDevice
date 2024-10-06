@@ -1,3 +1,3 @@
 A simple application that obtains resource data from an Android smartphone.
 
-<img src="./Screenshot.png" alt="" style="zoom: 150%;" />
+<img src="./Screenshot.png" alt="Screenshot" />
