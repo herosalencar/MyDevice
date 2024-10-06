@@ -99,4 +99,76 @@
 
     </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewHardware"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardHead">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutCardHardware"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/ImageCardHardware"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:contentDescription="@string/image_painel_hardware_app"
+                app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayoutCardHardware"
+                app:layout_constraintStart_toStartOf="@+id/ConstraintLayoutCardHardware"
+                app:layout_constraintTop_toTopOf="@+id/ConstraintLayoutCardHardware"
+                app:srcCompat="@drawable/baseline_memory_24"
+                app:tint="@android:color/holo_green_dark" />
+
+            <TextView
+                android:id="@+id/TextInfoNameCPU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/name_cpu"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ImageCardHardware"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TextInfoArchitecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/architecture"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ImageCardHardware"
+                app:layout_constraintTop_toBottomOf="@+id/TextInfoNameCPU" />
+
+            <TextView
+                android:id="@+id/TextInfoMemory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/total_memory"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ImageCardHardware"
+                app:layout_constraintTop_toBottomOf="@+id/TextInfoArchitecture" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

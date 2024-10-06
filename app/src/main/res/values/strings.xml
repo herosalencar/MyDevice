@@ -6,4 +6,9 @@
     <string name="model">Modelo</string>
     <string name="version_android">Android X</string>
     <string name="api_nivel">API Nível</string>
+    <string name="image_painel_hardware_app">Logo do painel hardware do app</string>
+    <string name="image_painel_rede_app">Logo do painel rede do app</string>
+    <string name="name_cpu">Nome da CPU</string>
+    <string name="architecture">Arquitetura da CPU</string>
+    <string name="total_memory">Memória RAM</string>
 </resources>
